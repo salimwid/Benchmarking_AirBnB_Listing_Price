@@ -29,7 +29,9 @@ To process the list reviews, NLP and sentiment analysis were done. The sentiment
 
 To estimate listing price and identify important features, regression models were adopted. Two families of non-linear regression models, tree-based (ensemble and boosting methods) and neural network models, were chosen. Chosen models include LightGBM, XGBoost, Random Forest, Deep Neural Network and Wide Neural Network. Simple OLS was done as a baseline comparison for the models. In order to have a thorough understanding of the results, SHAP values and Permutation Feature Importance (PFI) were adopted. Both models highlighted the important features and their effect on price for specific units. <br>
 
-Meanwhile, recommender system was adopted to benchmark a listed property against listings that are most similar to it. The recommender system was based on similarity matrix of the listings. Due to the absence of user interaction data, it was not possible to come up with an evaluation metric for the system.
+The best performing regression models were the stacked regressor with CV R-Squared of 0.785 and CV MSE of 0.134. <br>
+
+Meanwhile, recommender system was adopted to benchmark a listed property against listings that are most similar to it. The recommender system was based on similarity matrix of the listings. Due to the absence of user interaction data, it was not possible to come up with an evaluation metric for the system. However, we could track the click rate of recommended properties and track how many of the top 10 lists recommended appear in guest searches when the system is implemented in the Airbnb platform.
 
 ### Collaborators
 Gino Tiu <br>
