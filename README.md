@@ -20,7 +20,7 @@ The paper tackles: <br>
 These two key contributions are especially important as COVID-19 has changed the dynamics of travel globally, with the shifts in guest behaviour driven by the prevalence of remote work and price sensitivity due to post-pandemic economic climate.
 
 ### Datasets
-The main dataset adopted in this project was acquired from Inside Airbnb which was a publicly available dataset for Airbnb price listing. In this project, the main focus was listing price in London as it was the city with the most Airbnb listings. There were 2 key files used: <strong> Detailed listing file </strong> and <strong> user reviews file </strong>. <br> Detailed listing file had 66,641 unique listings with over 74 attributes and across 5 main categories. Meanwhile, user reviews file had 1,043,004 reviews with meta features on listing id, reviewer id, date and reviews description. <br>
+The main dataset adopted in this project was acquired from Inside Airbnb which was a publicly available dataset for Airbnb price listing. In this project, the main focus was listing price in London as it was the city with the most Airbnb listings. There were 2 key files used: <strong> Detailed listing file </strong> and <strong> user reviews file </strong>. Detailed listing file had 66,641 unique listings with over 74 attributes and across 5 main categories. Meanwhile, user reviews file had 1,043,004 reviews with meta features on listing id, reviewer id, date and reviews description. <br>
 
 The main dataset was enriched using data from Google Maps API which added tube station details and location to the listing information. The clean aggregated dataset has 65 features, 32 one hot encoding features and 33 numerical features. <br>
 
@@ -31,7 +31,7 @@ To estimate listing price and identify important features, regression models wer
 
 The best performing regression models were the stacked regressor with CV R-Squared of 0.785 and CV MSE of 0.134. <br>
 
-Meanwhile, recommender system was adopted to benchmark a listed property against listings that are most similar to it. The recommender system was based on similarity matrix of the listings. Due to the absence of user interaction data, it was not possible to come up with an evaluation metric for the system. However, we could track the click rate of recommended properties and track how many of the top 10 lists recommended appear in guest searches when the system is implemented in the Airbnb platform.
+Meanwhile, recommender system was adopted to benchmark a listed property against listings that are most similar to it. The recommender system was based on similarity matrix of the listings. Due to the absence of user interaction data, it was not possible to come up with an evaluation metric for the system. However, we could track the click rate of recommended properties and track how many of the top 10 lists recommended appear in guest searches when the system is implemented in the Airbnb platform. These two metrics could indicate the effectiveness of the recommender system.
 
 ### Collaborators
 Gino Tiu <br>
