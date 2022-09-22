@@ -1,13 +1,13 @@
 # Benchmarking_Airbnb_Listing_Price
 This project aims to predict AirBnB listing price in London using sentiment analysis and Machine Learning models.
 
-#### Models Deployed
+### Models Deployed
 Recommender System (Similarity Matrix), Natural Language Processing (NLP), Sentiment Analysis, Regression Model (Tree Based, Stacked Tree and Neural Network based models), Global and Local Explainability (SHAP Values and LIME).
 
-#### Techniques Employed
+### Techniques Employed
 Data Mining, Exploratory Data Analysis, Feature Engineering, Text Mining, Data Visualization, Machine Learning, Parallel Processing.
 
-#### Tools Employed
+### Tools Employed
 Pickle, sklearn, TensorFlow, Keras, VADER, NLTK, Google Map API, Plotly
 
 ### Context
@@ -31,7 +31,6 @@ To estimate listing price and identify important features, regression models wer
 
 Meanwhile, recommender system was adopted to benchmark a listed property against listings that are most similar to it. The recommender system was based on similarity matrix of the listings. Due to the absence of user interaction data, it was not possible to come up with an evaluation metric for the system.
 
-<br>
 ### Collaborators
 Gino Tiu <br>
 Widya Salim <br>
